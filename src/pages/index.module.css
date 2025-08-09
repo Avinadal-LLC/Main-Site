@@ -21,3 +21,22 @@
   align-items: center;
   justify-content: center;
 }
+
+.section {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.sectionPurple {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;  
+}
+
+.centeredHeading {
+  width: 100%;
+  text-align: center;
+}
