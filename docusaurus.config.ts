@@ -45,20 +45,21 @@ const config: Config = {
           routeBasePath: 'about',
           sidebarPath: './sidebars.ts'
         },
-        blog: {
-          blogTitle: 'News',
-          path: 'news',
-          routeBasePath: 'news',
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:undefined,          
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: undefined,
+        // blog: {
+        //   blogTitle: 'News',
+        //   path: 'news',
+        //   routeBasePath: 'news',
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ['rss', 'atom'],
+        //     xslt: true,
+        //   },
+        //   editUrl:undefined,          
+        //   onInlineTags: 'warn',
+        //   onInlineAuthors: 'warn',
+        //   onUntruncatedBlogPosts: 'warn',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -86,7 +87,7 @@ const config: Config = {
           position: 'left',
           label: 'About'
         }, 
-        {to: '/news', label: 'News', position: 'left'},
+        // {to: '/news', label: 'News', position: 'left'},
       ],
     },
     footer: {
@@ -95,10 +96,10 @@ const config: Config = {
         {
           title: 'Community',
           items: [
-            {
-              label: 'News',
-              to: '/news',
-            },
+            // {
+            //   label: 'News',
+            //   to: '/news',
+            // },
             {
               label: 'Discord',
               href: 'https://discord.gg/avinadal',
