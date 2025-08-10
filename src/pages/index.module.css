@@ -8,12 +8,22 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  font-family: Lora, serif !important; 
+  font-weight: bold;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+h1, h2 {
+  font-family: Lora, serif !important;
+}
+
+.centerImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svgSeal {
+  max-width: 100%;
 }
 
 .buttons {
@@ -25,18 +35,37 @@
 .section {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
   width: 100%;
 }
 
-.sectionPurple {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;  
+.sectionSealed {
+  background-color: var(--avinadal-black);
+  border-top: solid 5px var(--avinadal-black);
+  border-bottom: solid 5px var(--avinadal-black);
+  text-align: center;
+  color: var(--avinadal-white);
+}
+
+.sectionSealed p {
+  padding: 1rem 0;
+  margin: 0;  
 }
 
 .centeredHeading {
   width: 100%;
   text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+  .centerImg {
+    display: none;    
+  }
+}
+
+[data-theme='dark'] .sectionSealed  {  
+  background-color: var(--avinadal-purple) !important;
 }

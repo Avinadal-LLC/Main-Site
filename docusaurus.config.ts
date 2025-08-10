@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Empire of Avinadal',
-  tagline: 'By the Emperor\'s Word, By the Empire\'s Will',
+  title: 'Avinadal',
+  tagline: 'An adult community of kink-friendly creators using virtual personas.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -40,7 +40,11 @@ const config: Config = {
     [
       'classic',
       {
-        docs: false,
+        docs: {
+          path: 'about',
+          routeBasePath: 'about',
+          sidebarPath: './sidebars.ts'
+        },
         blog: {
           blogTitle: 'News',
           path: 'news',
@@ -70,12 +74,18 @@ const config: Config = {
     },
     image: 'img/MetaImage.jpg',
     navbar: {
-      title: 'Empire of Avinadal',
+      title: 'Avinadal',
       logo: {
         alt: 'Seal of Avinadal',
         src: 'img/seal.png',
       },
-      items: [        
+      items: [       
+        {
+          type: 'docSidebar',
+          sidebarId: 'aboutSidebar',
+          position: 'left',
+          label: 'About'
+        }, 
         {to: '/news', label: 'News', position: 'left'},
       ],
     },

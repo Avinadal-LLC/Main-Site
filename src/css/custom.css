@@ -10,7 +10,8 @@
   --avinadal-purple: #6F3A80;
   --avinadal-white: #E3E3E3;
   --avinadal-black: #0B0B0B;
-  --ifm-color-primary: var(--avinadal-gold);
+  --avinadal-gray: #8C8C8C;
+  --ifm-color-primary: var(--avinadal-purple);
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
@@ -24,6 +25,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {  
+  --ifm-color-primary: var(--avinadal-gold);
   --ifm-color-content: var(--avinadal-white); 
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -32,4 +34,16 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;  
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  background-color: var(--avinadal-purple);
+}
+
+.footer a {
+  color: var(--avinadal-gold);
+}
+
+[data-theme='dark'] .footer {
+  background-color: var(--ifm-background-surface-color);
 }
