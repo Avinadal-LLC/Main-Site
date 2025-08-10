@@ -103,11 +103,19 @@ const config: Config = {
               label: 'Discord',
               href: 'https://discord.gg/avinadal',
             },
+            {
+              label: 'Patreon',
+              href: 'https://www.patreon.com/c/Avinadal'
+            },
           ],
         },
         {
           title: 'More',
           items: [            
+            {
+              label: 'Avilium Ao3 Collection',
+              href: 'https://archiveofourown.org/collections/avilium'
+            },
             {
               label: 'GitHub',
               href: 'https://github.com/Avinadal-LLC',
