@@ -4,7 +4,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import SealSvg from '@site/static/img/Logo.svg'
+import SealSvg from '@site/static/img/logo.svg'
 import AriesHeadShotUrl from '@site/static/img/art-by-ruri/Aries.png'
 import ElizabethHeadShotUrl from '@site/static/img/art-by-ruri/Elizabeth.png'
 import styles from './index.module.css';
